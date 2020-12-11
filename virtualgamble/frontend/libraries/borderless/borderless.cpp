@@ -159,8 +159,11 @@ BorderlessWindow::BorderlessWindow() : handle{ create_window(&BorderlessWindow::
 	tahomabig = ImGui::GetIO().Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\Tahoma.ttf", 32.0f, &font_config, ranges);
 	firacode = ImGui::GetIO().Fonts->AddFontFromMemoryCompressedTTF(Font_compressed_data, Font_compressed_size, 14, &font_config, ranges);
 
+	ImGui_ImplWin32_EnableDpiAwareness();
 	ImGui_ImplWin32_Init(handle.get());
 	ImGui_ImplDX9_Init(g_pd3dDevice);
+
+	initialized_interface = true;
 
 	MSG msg;
 
