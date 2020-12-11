@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BackEnd">
+      <UniqueIdentifier>{a820bff0-f956-46c7-89a6-a3318d0c61e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrontEnd">
+      <UniqueIdentifier>{d87fbc0a-5a55-47d0-a668-6904f552407b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="frontend\libraries\borderless\borderless.cpp" />
+    <ClCompile Include="frontend\libraries\imgui\imgui.cpp" />
+    <ClCompile Include="frontend\libraries\imgui\imgui_demo.cpp" />
+    <ClCompile Include="frontend\libraries\imgui\imgui_draw.cpp" />
+    <ClCompile Include="frontend\libraries\imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="frontend\libraries\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="frontend\libraries\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="frontend\libraries\interface\interface.cpp" />
+    <ClCompile Include="backend\configurations\configuration.cpp" />
+    <ClCompile Include="backend\configurations\saver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frontend\libraries\borderless\borderless.hpp" />
+    <ClInclude Include="frontend\libraries\imgui\imgui.h" />
+    <ClInclude Include="frontend\libraries\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="frontend\libraries\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="frontend\libraries\imgui\imgui_internal.h" />
+    <ClInclude Include="frontend\libraries\imgui\imstb_rectpack.h" />
+    <ClInclude Include="frontend\libraries\imgui\imstb_textedit.h" />
+    <ClInclude Include="frontend\libraries\imgui\imstb_truetype.h" />
+    <ClInclude Include="frontend\libraries\interface\interface.hpp" />
+    <ClInclude Include="globaloperands.h" />
+    <ClInclude Include="backend\configurations\configuration.h" />
+    <ClInclude Include="backend\configurations\saver.h" />
+    <ClInclude Include="frontend\libraries\borderless\rawdata.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+</Project>
